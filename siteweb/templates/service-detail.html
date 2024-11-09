@@ -1,0 +1,43 @@
+{% extends "base.html" %} <!-- vai trazer o base html para essa página-->
+<!-- ira obre escrever o tiyulo do template base-->
+{% block titulo %} 
+Serviços-Detalhes
+{% endblock titulo %}
+
+{% block conteudo %}
+
+{% load static %}
+<!--css-->
+<link rel="stylesheet" href="{% static '/styles/cssservico/servico-d.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--body-->
+
+<div class="detalhe">
+     
+
+
+            <div class="text-center">
+
+           
+                <h5>Detalhes do Serviço: {{post.title}}</h5>
+                
+                <h1>Detalhes do Serviço: {{post.title}}</h1>
+            
+                <p>{{post.create_at}}</p> 
+            
+                <img src="{{post.image.url}}" width="300" alt="{{post.title}}">
+             
+                <p>{{post.description}}</p>  
+
+                <a class="btn btn-danger" href="{% url 'servicos' %}">Voltar</a>
+        
+            </div>
+
+
+</div>
+
+<!--endbody-->
+
+{% endblock conteudo %}

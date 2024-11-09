@@ -1,0 +1,39 @@
+{% extends "base.html" %} <!-- vai trazer o base html para essa página-->
+<!-- ira obre escrever o tiyulo do template base-->
+{% block titulo %} 
+serviços
+{% endblock titulo %}
+
+{% block conteudo %}
+{% load static %}
+<!--css-->
+<link rel="stylesheet" href="{% static '/styles/cssservicos/servicos.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<!--body-->
+         		
+             <!--Remover <p>{{post.create_at}}</p>depois-->
+
+ <div class="detalhe">
+
+    <div class="row align-items-center">
+        <h1 class="text-center mt-4">MEUS SERVÇÕES</h1>
+        <h1 class="text-center mt-4">MEUS SERVÇÕES</h1>
+        {% for post in posts %}
+        <div class="col-md-4">
+            <div class="card">
+            <img src="{{post.image.url}}" alt="{{post.title}}" class="img-fluid-ms">
+            <div class="card-body">
+            <h5 class="card-title">{{post.title}}</h5>
+            <a class="btn btn-info" href="{% url 'service-detail' post.id %}">Ver</a>
+            </div>
+            </div>
+          </div>
+          {% endfor %}
+      </div>
+ </div>
+
+
+{% endblock conteudo %}

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+h1{
+    margin-bottom: 1000px;
+}
+
+.servico, .detalhe{
+    margin-top: 500px;
+    margin-bottom: 200px;
+}
+
+.card-img-w{
+    width: 300px;
+}

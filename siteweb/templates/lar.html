@@ -1,0 +1,82 @@
+{% extends "base.html" %} <!-- vai trazer o base html para essa página-->
+<!-- ira obre escrever o tiyulo do template base-->
+{% block titulo %} 
+Home
+{% endblock titulo %}
+
+{% block conteudo %}
+{% load static %}
+<!--css-->
+<link rel="stylesheet" href="{% static '/styles/larcss/lar.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--endcss-->
+<div class="lar">
+    <!--texto banner-->
+    <div class="content">
+        <div class="banne-text">
+            <h1 class="text-light" >Piscologa Patrícia Furtado</h1>
+            <p>Bem-vinda, Piscologa Patrícia Furtado </p>
+            <p>CRP xx/xxxYY</p>
+            <a href="#"> 
+                <button type="button" class="btn btn-outline-light btn-sm">Entre em contato</button>
+            </a>
+        </div>
+    </div>
+    <!--end texto banner-->
+</div>
+
+<!--sobre mim-->
+
+<div class="about">
+    <div class="container mt-4">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-4 col-4">
+            <img src="/static/IMG/patricia.png" alt="Patricia" class="img-fluid rounded">
+          </div>
+          <div class="col-md-8 col-8">
+            <h2>Sobre mim</h2>
+            <p>Sou Patrícia Furtado, psícologa especalista em Terapia
+                 Cognitivo-Comportamental e Formada em Terapia do Esquema.
+                  Minha missão é ajudar você a entender e transformar padrões
+                   de pensamento e comportamento que afetam seu bem-estar.
+            </p>
+            <a href="#"> 
+                <button type="button" id="butao"  class="btn btn-outline-dark btn-sm">Ver mais</button>
+            </a>
+          </div>
+        </div>
+      </div>
+</div>
+  
+  <!--end sobre mim-->
+<!-- espaço harmonioso-->
+
+<div class="about">
+    <div class="container mt-4">
+        <div class="row d-flex align-items-center">
+  
+          <div class="col-md-8 col-8">
+            <h2>Espaço harmonioso</h2>
+            <p>Cuide da sua saúde mental em um ambiente sereno e acolhedor.
+                 Nossa sala, com design minimalista e toques de natureza, 
+                 proporciona o espaço perfeito para relaxar, refletir e se 
+                 reconectar consigo mesmo. de pensamento e comportamento 
+                 que afetam seu bem-estar.
+            </p>
+            <a href="#"> 
+                <button type="button" id="butao"  class="btn btn-outline-dark btn-sm">Ver mais</button>
+            </a>
+          </div>
+  
+          <div class="col-md-4 col-4">
+            <img src="/static/IMG/espaco.png" alt="espaço" class="img-fluid rounded">
+          </div>
+  
+        </div>
+      </div>
+</div>
+  
+  <!-- end espaço harmonioso-->
+
+{% endblock conteudo %}

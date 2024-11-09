@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+    
+}
+
+.sobre{
+    margin-top: 100px;
+    
+}
+
+
+@media (max-width:450px){
+    .sobre{
+        margin-bottom: 120px;
+        
+    }
+
+    .about h2{
+        font-size: 18px;
+
+    }
+    .about p{
+        font-size: 8px;
+    }
+    .about a{
+        font-size: 8px;
+
+    }
+
+}
+
+.about {
+    margin-bottom: 20px
+}
+

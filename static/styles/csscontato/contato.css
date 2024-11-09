@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+/*contatos*/
+.contact{
+    
+    width: 100%;
+    height: 90vh;
+    padding-top: 250px;
+    
+}
+
+.contact .content{
+    color: black;
+    text-align: justify;
+    padding-top: 0%;
+}
+
+.contact .content h1{
+    font-size: 45px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 10px;
+
+}
+.contact .content p{
+    font-size: 20px;
+    font-weight: 200;
+    text-shadow: 0px 1px 1px black;
+}
+.contact .content a{
+    font-size: 20px;
+    
+}
+
+@media (max-width:450px){
+    .contact .content h1{
+        font-size: 25px;
+        font-weight: 250;
+    }
+    .contact .content p{
+        font-size: 15px;
+    }
+    .contact .content a{
+        font-size: 15px;
+
+    }
+}
+@media (max-width:1400px){
+    .contact .content h1{
+        font-size: 25px;
+        font-weight: 250;
+    }
+    .contact .content p{
+        font-size: 15px;
+    }
+    .contact .content a{
+        font-size: 15px;
+
+    }
+}
+@media (max-width:1024px){
+    .contact .content h1{
+        font-size: 25px;
+        font-weight: 220;
+    }
+    .contact .content p{
+        font-size: 15px;
+    }
+    .contact .content a{
+        font-size: 15px;
+
+    }
+}
+
+
+/*end contatos*/

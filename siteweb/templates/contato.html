@@ -1,0 +1,62 @@
+{% extends "base.html" %} <!-- vai trazer o base html para essa página-->
+<!-- ira obre escrever o tiyulo do template base-->
+{% block titulo %} 
+Contato
+{% endblock titulo %}
+
+{% block conteudo %}
+{% load static %}
+<!--css-->
+<link rel="stylesheet" href="{% static '/styles/csscontato/contato.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--endcss-->
+<!--body-->
+<div class="container-fluid mt-4 ">
+    <div class="row align-items-center ">
+        <div class="col-12">
+            <div class="contact">
+                <div class="content">
+                    <div class="row lead" >
+                        <div class="col-12 col-md-4 d-flex justify-content-center">
+                            <div class="address">
+                                <h1>Endereço</h1>
+                                <p>Av: Geremário Dantas</p>
+                                <p>Número: 800</p>
+                                <p>Cidade: Rio de Janeiro, 22743010</p>
+                            </div>
+                        </div>
+
+                         <div class="col-12 col-md-4 d-flex justify-content-center">
+                                <div class="contact-methods">
+                                    <h1>Entre em contato</h1>
+                                    <p>Celular: (21) 98137-5393</p>
+                                    <p>Email: patricia.maciel@ymail.com</p>
+                                </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 d-flex justify-content-center">
+                                    <div class="social-media">
+                                        <h1>Minhas redes sociais</h1>
+                                        <a class="text-dark" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                        <a class="text-dark" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a class="text-dark" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </div>      
+                        </div>
+    
+                    </div>
+ 
+                </div>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+</div>
+
+
+<!--endbody-->
+
+{% endblock conteudo %}
