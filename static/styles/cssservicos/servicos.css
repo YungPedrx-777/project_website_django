@@ -1,21 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
     
+    padding: 0;
     text-decoration: none;
     font-family: "Inter", sans-serif;
     list-style: none;
     scroll-behavior: smooth;
 }
 
-h1{
-    margin-bottom: 1000px;
+.detalhe {
+
+    margin: 100px;
+    padding-top: 0;
+  
 }
 
-.servico, .detalhe{
-    margin-top: 500px;
-    margin-bottom: 200px;
-}
-
-.card-img-w{
+/*.card { 
     width: 300px;
+    height: 560px;
+    background-color: #f8f9fa; /*  Cor de fundo para visualizar o tamanho do card */
+  
+ /* 
+
+  @media (max-width:450px){
+
+    .card { 
+        width: 230px;
+        height: 460px;
+        background-color: #f8f9fa; 
+
+
+    .card h5{
+        font-size: 25px;
+        font-weight: 250;
+    }
+
+    .card a{
+        font-size: 25px;
+        font-weight: 300;
+
+    }
 }
+
+@media (max-width:1024px){
+
+    .card h5{
+        font-size: 25px;
+        font-weight: 220;
+    }
+
+    .card a{
+        font-size: 15px;
+
+    }
+}
+*/

@@ -15,13 +15,33 @@ serviços
 <!--body-->
          		
              <!--Remover <p>{{post.create_at}}</p>depois-->
+<div class="detalhe ">
+    <div>
+        <h1 class="text-center">MEUS SERVIÇOS</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            {% for post in posts %}
+            <div class="col">
+                <div class="card h-100 text-bg-light">
+                    <img src="{{post.image.url}}" class="card-img-top" alt="{{post.title}}">
+                    <div class="card-body">
+                        <p class="card-text">{{post.title}}</p>
+                        <a class="btn btn-info" href="{% url 'service-detail' post.id %}">Ver</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+</div>
 
+  
+<!--
  <div class="detalhe">
 
     <div class="row align-items-center">
-        <h1 class="text-center mt-4">MEUS SERVÇÕES</h1>
-        <h1 class="text-center mt-4">MEUS SERVÇÕES</h1>
+        <h1 class="text-center">MEUS SERVÇÕES</h1>
         {% for post in posts %}
+        
         <div class="col-md-4">
             <div class="card">
             <img src="{{post.image.url}}" alt="{{post.title}}" class="img-fluid-ms">
@@ -31,9 +51,11 @@ serviços
             </div>
             </div>
           </div>
+          
           {% endfor %}
       </div>
  </div>
+ -->
 
 
 {% endblock conteudo %}

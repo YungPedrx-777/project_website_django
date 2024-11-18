@@ -10,7 +10,7 @@ def home(request):
     #return render(request, 'contato.html') #mudar dps
     return render(request, 'lar.html')
 def base(request):
-    return render(request, 'base.html')
+    return render(request, 'lar.html')
 #def servicos(request):
  #   return render(request, 'servicos.html')
 def sobre(request):
