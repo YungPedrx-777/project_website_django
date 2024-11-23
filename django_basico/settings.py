@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-_24@q6wu0h(7!httz0+2)dx6w$)#%agi*_q-5$#6uec&6!%^d2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False #estava com True
 
-ALLOWED_HOSTS = ['project-website-django-5.onrender.com', 'www.siteweb.com']
+ALLOWED_HOSTS = ['project-website-django-6.onrender.com', 'www.siteweb.com']
 
 
 # Application definition
