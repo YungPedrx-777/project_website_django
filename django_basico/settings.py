@@ -28,9 +28,9 @@ STATIC_DIR=os.path.join(BASE_DIR,'static')
 SECRET_KEY = 'django-insecure-_24@q6wu0h(7!httz0+2)dx6w$)#%agi*_q-5$#6uec&6!%^d2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False #estava com True
+DEBUG = True #estava com True
 
-ALLOWED_HOSTS = ['project-website-django-6.onrender.com', 'www.siteweb.com']
+ALLOWED_HOSTS = ['project-website-django-7.onrender.com', 'www.siteweb.com']
 
 
 # Application definition
@@ -139,7 +139,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/' # add "/"
-MEDIA_URL = '/media/' # foi add
+MEDIA_URL = '/media/' # foi add vou tirar as barras
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
