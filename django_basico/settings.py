@@ -91,6 +91,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'), 
+        'USER': 'admin', #novo
+        "PASSWORD": 'GiTdpmFGRLPPsz34b9enazkaLVqnyXMV', #NOVO
+        'HOST': 'dpg-ct0inndumphs73fiqobg-a.oregon-postgres.render.com', #novo
     }
 }
 
